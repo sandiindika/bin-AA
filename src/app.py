@@ -65,7 +65,7 @@ class MyApp():
 
     def __init__(self, message= "off"):
         self.message = False if message == "off" else True
-        self.pathdata = "./data"
+        self.pathdata = "./data/music"
         self.menus = [
             "Beranda", "Dataset", "Ekstraksi Fitur", "Klasifikasi"
         ]
@@ -178,8 +178,8 @@ class MyApp():
                 df = get_musik(self.pathdata)
                 st.dataframe(df, use_container_width= True, hide_index= True)
 
-                mk_dir("./result/dataframe")
-                df.to_csv("./result/dataframe/list-musik.csv", index= False)
+                mk_dir("./data/dataframe")
+                df.to_csv("./data/dataframe/list-musik.csv", index= False)
         
         except Exception as e:
             self._exceptionMessage(e)
@@ -221,11 +221,11 @@ class MyApp():
 
                     with st.spinner("Extraction features is running..."):
                         df = ekstraksi_fitur_mfcc(
-                            get_csv("./result/dataframe/list-musik.csv"),
+                            get_csv("./data/dataframe/list-musik.csv"),
                             duration= duration, coef= coef
                         )
 
-                    df.to_csv("./result/dataframe/mfcc_features.csv", index= False)
+                    df.to_csv("./data/dataframe/mfcc_features.csv", index= False)
                     st.dataframe(df, use_container_width= True, hide_index= True)
         
         except Exception as e:
@@ -328,7 +328,7 @@ class MyApp():
                     key= "Button untuk training model"
                 )
             with right:
-                df = get_csv("./result/dataframe/mfcc_features.csv")
+                df = get_csv("./data/dataframe/mfcc_features.csv")
                 features = df.iloc[:, 1:14].values
                 labels = df.iloc[:, -1].values
 
