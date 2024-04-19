@@ -146,6 +146,8 @@ def get_musik(directory):
     directory : string
         Jalur utama tempat file musik akan diakses.
 
+    Returns
+    -------
     df : object DataFrame or TextFileReader
         File csv (comma-separated values) dikembalikan sebagai
         struktur data dua dimensi dengan sumbu yang diberi label.
@@ -182,8 +184,12 @@ def ekstraksi_fitur_mfcc(df, duration= 30, coef= 13):
 
     Parameters
     ----------
+    df : object DataFrame
+        Object DataFrame tempat semua file musik (path file) tersimpan.
+
     duration : int or float
         Durasi musik yang di ekstrak.
+        
     coef : int
         Jumlah koefisien MFCC yang ingin dihitung.
 

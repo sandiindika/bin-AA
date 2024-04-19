@@ -29,7 +29,7 @@ st.markdown(
     unsafe_allow_html= True
 )
 
-## CSS on styles.css
+## CSS on style.css
 with open("./css/style.css") as file:
     st.markdown(
         "<style>{}</style>".format(file.read()),
@@ -41,10 +41,10 @@ class MyApp():
 
     Parameters
     ----------
-    message : string or bool, default= "off"
-        Jika "off" atau False, maka pesan error tidak akan ditampilkan
-        dalam Webpage Sistem. Jika "on" atau True, maka akan
-        menampilkan pesan error dalam Sistem Webpage yang dapat dilihat
+    message : bool, default= False
+        Jika False, maka pesan error tidak akan ditampilkan
+        dalam Webpage Sistem. Jika True, maka akan menampilkan
+        pesan error dalam Sistem Webpage yang dapat dilihat
         dan dianalisis.
 
     Attributes
@@ -52,7 +52,7 @@ class MyApp():
     message : bool
         Tampilkan pesan error pada Sistem Webpage atau tidak.
 
-    pathdata : string
+    pathdata : str
         Path (jalur) data disimpan dalam lokal direktori.
 
     menus : list
@@ -63,8 +63,8 @@ class MyApp():
         WebPage.
     """
 
-    def __init__(self, message= "off"):
-        self.message = False if message == "off" else True
+    def __init__(self, message= False):
+        self.message = message
         self.pathdata = "./data/music"
         self.menus = [
             "Beranda", "Dataset", "Ekstraksi Fitur", "Klasifikasi"
@@ -121,7 +121,7 @@ class MyApp():
     def _pageBeranda(self):
         """Halaman beranda
 
-        Halaman ini akan menampilkan judul penelitian dan abstra dari
+        Halaman ini akan menampilkan judul penelitian dan abstrak dari
         proyek.
         """
         try:
@@ -421,5 +421,5 @@ class MyApp():
                 self._pageKlasifikasi()
 
 if __name__ == "__main__":
-    app = MyApp(message= "on")
+    app = MyApp(message= False)
     app.main()
