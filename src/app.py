@@ -30,7 +30,7 @@ st.markdown(
 )
 
 ## CSS on styles.css
-with open("./css/styles.css") as file:
+with open("./css/style.css") as file:
     st.markdown(
         "<style>{}</style>".format(file.read()),
         unsafe_allow_html= True
