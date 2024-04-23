@@ -5,7 +5,7 @@
 Untuk instalasi perangkat lunak, pastikan dependensi bawaan telah diinstal. Jalankan perintah berikut di terminal atau command prompt pada current directory:
 
 ```bash
-pip install -r requires.txt
+pip install -r requirements.txt
 ```
 
 ## Cara Penggunaan
