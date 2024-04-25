@@ -1,6 +1,7 @@
-streamlit==1.32.2
-streamlit-option-menu==0.3.6
-pandas==2.1.4
-numpy==1.26.2
-matplotlib==3.8.2
-scikit-learn==1.4.1.post1
+streamlit
+streamlit-option-menu
+pandas
+numpy
+librosa
+matplotlib
+scikit-learn

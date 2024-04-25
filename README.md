@@ -2,15 +2,11 @@
 
 ## Instalasi dan Dependensi
 
-Untuk instalasi perangkat lunak, pastikan dependensi bawaan telah diinstal. Jalankan perintah berikut di terminal atau command prompt pada current directory:
+Untuk instalasi perangkat lunak, pastikan dependensi bawaan telah diinstal. Dependensi yang dibutuhkan tercantum dalam:
 
 ```bash
-pip install -r requirements.txt
+requirements.txt
 ```
-
-## Cara Penggunaan
-
-Untuk menjalankan proyek, cukup jalankan file `RUN.bat`. Proyek akan secara otomatis terbuka ketika file `RUN.bat` dijalankan.
 
 ## Kontribusi
 

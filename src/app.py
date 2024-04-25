@@ -421,5 +421,5 @@ class MyApp():
                 self._pageKlasifikasi()
 
 if __name__ == "__main__":
-    app = MyApp(message= False)
+    app = MyApp(message= True)
     app.main()
