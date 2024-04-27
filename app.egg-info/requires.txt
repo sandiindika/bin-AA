@@ -1,7 +1,0 @@
-streamlit
-streamlit_option_menu
-pandas
-numpy
-librosa
-matplotlib
-scikit-learn
