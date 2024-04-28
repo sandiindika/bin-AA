@@ -101,7 +101,7 @@ class MyApp():
             )
             
             ms_60()
-            show_caption("Copyright © 2024 | Abdul Aziz", size= 5)
+            show_caption("Copyright © 2024 | ~", size= 5)
         return selected
     
     def _exceptionMessage(self, e):
