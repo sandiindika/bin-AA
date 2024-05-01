@@ -1,12 +1,25 @@
-# PENERAPAN METODE RANDOM FOREST DALAM KLASIFIKASI GENRE MUSIK MENGGUNAKAN EKSTRAKSI FITUR MFCC
+# Penerapan Metode Random Forest Dalam Klasifikasi Genre Musik Menggunakan Ekstraksi Fitur Mel Frequency Cepstral Coefficient
+
 
 ## Instalasi dan Dependensi
 
-Untuk instalasi perangkat lunak, pastikan dependensi bawaan telah diinstal. Dependensi yang dibutuhkan tercantum dalam:
+  - Fork dan Clone repository:
+    ```
+    $ git clone https://github.com/sandiindika/4fun-AA.git
+    ```
 
-```bash
-requirements.txt
-```
+  - Pergi ke main repository:
+    ```
+    $ cd 4fun-AA
+    ```
+
+  - Pastikan kamu memiliki `pip` yang terinstal. Jika belum, instal `pip` terlebih dahulu [disini](https://pip.pypa.io/en/stable/installation/).
+
+  - Instal semua module yang dibutuhkan:
+    ```
+    $ pip install -r requirements.txt
+    ```
+
 
 ## Dukungan atau Kontak
 
