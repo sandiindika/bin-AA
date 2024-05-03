@@ -135,31 +135,9 @@ class MyApp():
 
             ms_40()
             with ml_center():
-                show_paragraf(
-                    "Musik dapat direpresentasikan sebagai sinyal "
-                    "audio yang memiliki fitur di antaranya bandwith, "
-                    "frekuensi, spectral roll-off, dan masih banyak "
-                    "karakteristik fitur lainnya. Untuk mendapatkan "
-                    "informasi fitur yang terkandung dalam musik "
-                    "dilakukan proses ekstraksi fitur yaitu untuk "
-                    "mendapatkan atribut yang relevan dari data audio "
-                    "musik. Data fitur tersebut dapat digunakan untuk "
-                    "melakukan tindakan seperti klasifikasi, "
-                    "pengenalan, dan analisis musik. Identifikasi "
-                    "genre musik dapat membantu pengguna dalam "
-                    "menemukan lagu-lagu yang sesuai dengan preferensi "
-                    "mereka dan juga berguna dalam klasifikasi dan "
-                    "pengindeksan koleksi musik besar. Dalam "
-                    "penelitian ini, fokus utama adalah penerapan "
-                    "metode Random Forest untuk mengklasifikasikan "
-                    "genre musik menggunakan ekstraksi fitur MFCC pada "
-                    "data musik berbahasa Indonesia sejumlah 200 data "
-                    "dengan 4 genre musik yang berbeda. Model "
-                    "penelitian yang akan digunakan adalah ekstraksi "
-                    "fitur MFCC dengan 13 koefisien sebagai "
-                    "representasi fitur untuk setiap lagu dan metode "
-                    "Random Forest sebagai pengklasifikasi."
-                )
+                with open("./assets/abstract.txt", "r") as f:
+                    abstract = f.read()
+                show_paragraf(abstract)
         
         except Exception as e:
             self._exceptionMessage(e)

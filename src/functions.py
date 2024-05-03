@@ -103,7 +103,8 @@ def show_caption(text, size= 3, underline= False):
         st.markdown("---")
 
 def show_paragraf(text):
-    st.markdown(f"<div><p>{text}</p></div>", unsafe_allow_html= True)
+    st.markdown(f"<div class= \"paragraph\">{text}</div>",
+                unsafe_allow_html= True)
 
 """Baca file menggunakan Pandas
 
