@@ -2,6 +2,7 @@ streamlit
 streamlit-option-menu
 pandas
 numpy
+setuptools
 librosa
 matplotlib
 scikit-learn
